@@ -1,0 +1,13 @@
+query getLaunches{
+    launches{
+        launches{
+            ...FragLaunch
+        }
+        hasMore
+    }
+}
+
+fragment FragLaunch on Launch {
+    id
+    site
+}
